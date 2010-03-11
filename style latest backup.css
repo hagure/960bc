@@ -1,0 +1,997 @@
+/* @override 
+	http://localhost:8888/wp-kochyan/wp-content/themes/960bc/style.css
+	http://kochyanvalley.com/wp-content/themes/960bc/style.css
+
+*/
+
+/*
+Theme Name: 960bc
+Theme URI: http://www.guardianwebdesign.com.au/960bc
+Description: A blank canvas WordPress theme for developers (based on 960bc).
+Version: 1.0
+Author: Terry McCall
+Author URI: http://hagure-metaru.net//
+Tags: fixed-width, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar
+
+header green: #42603f;
+text green: #336633;
+Text brown: #3d2109;
+Border Brown #630;
+Footer Brown: #3d2109;
+Link Hover: 86d060
+
+?Footer Brown: #4b2802;
+?green: rgba(0,100,50,0.84);
+
+*/
+
+/* for ease of updating into the future we use separate style sheets for colours and typography */
+
+@import url(colours.css);
+@import url(typography.css);
+
+/* Begin Structure */
+
+
+	/*.container_12
+	{
+		background: #fff url(images/12_col.gif) repeat-y;
+	}*/
+
+/* @group Header */
+
+#header {
+			background: #336633 url(images/bgreen.jpg) fixed;
+			overflow: hidden;
+			}
+
+#headerimg {
+	width: 380px;
+	float: left;
+	margin-bottom: -15px;
+		}
+
+#headerimg h2 {
+		position: absolute;
+		top: -500px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+			}
+
+#headerimg img{
+			}
+
+#scrolltop{
+			background: url(images/scrolltop.png) repeat-x -90px;
+			height: 40px;
+			clear: both;
+			}
+
+/* @group Shopping Cart */
+
+#search {
+			position: absolute;
+			right: 10px;
+			z-index: 1;
+			padding: 10px;
+			} 
+
+#products_page_container {
+			
+			}
+
+#search, #search.wpsc_product_search {
+	width: 180px;
+	float: left;
+	background: #3d2109;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-khtml-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-khtml-border-bottom-right-radius: 10px;
+	border: 6px solid #630;
+	border-top: none;
+			}
+
+#search form {
+			padding-left: 15px;
+			}
+
+.tabletitle {
+			font-style: bold;
+			font-size: 18px;
+			background: #363;
+			color: white;
+			opacity: 1;
+			}
+
+.tableheader {
+			font-size: 12px;
+			font-weight: bold;
+			}
+
+table, tr, td {
+			margin: 0 auto;
+			border: 1px white solid;
+			padding: 5px;
+	
+			}
+
+
+#sliding_cart th {
+			padding: 2px 2px 1px;
+			}
+
+span.emptycart {
+			font: 16px "Monotype Corsiva", cursive;
+
+			padding:  4px 0;
+			}
+span.emptycart a{
+			color: #86d060;
+			}
+			
+span.emptycart a:hover{
+	
+		color:#fff;
+		text-decoration: none;
+			}			
+span.gocheckout {
+			font:"Monotype Corsiva", cursive;
+			font-size: 16px;
+
+			}
+
+#sliding_cart span.pricedisplay.checkout-total {
+			font-size: 14px;
+			font-weight: bold;
+			}
+			
+span.gocheckout:after, span.emptycart:after {
+			content: '\00a0 \00BB';
+			}
+			
+span.gocheckout a{
+			color: #86d060;
+			font-weight: bold;
+			font:bold 22px "Monotype Corsiva", cursive;
+			}
+span.gocheckout a:hover{ 
+		color:#fff;
+		text-decoration: none;
+		}
+
+tr {
+
+			}
+
+#sliding_cart p {
+			}
+
+#close-widget {
+			float: right;
+			}
+
+/*
+ * Fancy notification styling
+ */ 
+#fancy_notification{
+ color: #fff;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ background: #3d2109;
+ border: 6px solid #630;
+ display: none;
+ height: auto;
+ z-index: 9;
+	-moz-border-radius-: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	 }  
+ 
+#fancy_notification #loading_animation{
+ display: none;
+ }
+ 
+#fancy_notification #fancy_notification_content{
+ font-size: 12px;
+ display: none;
+ width: 300px;
+ padding: 10px;
+ height: auto;
+ text-align: left;
+ margin: 0px !important;
+ }
+ 
+#fancy_notification #fancy_notification_content span{
+ margin: 0px 0px 6px 0px;
+ display: block;
+ font-weight: normal;
+ }
+ 
+#fancy_notification #fancy_notification_content a{
+ display: block;
+ float: left;
+ margin-right: 12px;
+ margin-bottom: 3px;
+ color: #86d060;
+font: normal 18px "Monotype Corsiva", cursive;
+ }
+ 
+#fancy_notification #fancy_notification_content a:after{ 
+ 			content: '\00a0 \00BB';
+}
+  
+/*
+ * end Fancy notification styling
+ */
+a.wpsc_product_title{
+ display: block;
+ float: left;
+ color:  #336633;
+ font: 30px "Monotype Corsiva", cursive;
+ line-height: 1.3;
+ } 
+
+a.wpsc_product_title:hover{
+ color: #86d060;
+ text-decoration: underline;
+ } 
+ 
+.breadcrumb {
+			font: 14px Georgia, "Times New Roman", Times, serif;
+			border-right: 2px solid #630;
+			border-bottom: 1px dashed #3d2109;
+			padding: 0 15px 5px 0;
+			margin:  0 0 50px 0;
+			text-align: right;
+			}
+			
+.breadcrumb a{
+	color:  #336633;		
+			}
+.breadcrumb a:hover{
+	color:  #86d060;		
+			}
+
+/* @end */
+
+/* @end */
+
+body {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*background: transparent;*/
+		background-image: url(images/bg11.jpg);
+		}
+
+#content {
+		margin-top: 0px;
+		/*background: rgba(255,105,105,0.52);*/
+
+		}
+
+h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description {
+		text-decoration: none;
+		}
+
+p.description {
+			font-weight: bold;
+			font-size: 36px;
+			font-family: "Monotype Corsiva", cursive;
+			color: white;
+			margin: 0;
+			text-align: center;
+			padding: 2px 0 0 0;
+			letter-spacing: 1px;
+			word-spacing: 4px;
+			}
+
+/* @group Navigation */
+
+#navigation {
+			width: 715px;
+			float: left;
+			position: relative;
+			top: 0px;
+			}
+
+#navigation ul {
+			list-style-type: none;
+			padding: 40px 0 0 20px;
+			margin-right: 185px;
+			}
+
+#navigation li,#navigation ul {
+			font-size: 30px;
+			}
+
+li#navi-home a {
+			padding-left: ;
+			padding-right: 2em;
+			}
+li#navi-about a {
+			padding-right: 40px;
+						}
+li#navi-events a {
+						}
+li#navi-shipping a {
+			padding-right: 20px;
+			padding-top: 20px;
+						}
+li#navi-wholesale a {
+			padding-right: 20px;
+			padding-top: 20px;
+
+						}
+li#navi-contact a {
+			padding-top: 20px;
+						}
+
+
+#navigation li a {
+			float: left;
+			display: block;
+			
+			list-style-type: none;
+			color: white;
+			font-weight: bold;
+			font-family: "Monotype Corsiva", cursive;
+			}
+
+#navigation li a:hover {
+			list-style-type: none;
+			color: #86d060;
+			text-decoration: none;
+			}
+
+/* @end */
+
+.about-title h2 {
+			font-size: 48px;
+			text-align: right;
+			margin: 80px 40px 0 0;
+			width: 300px;
+			display: block;
+			}
+
+.about-title-right h2 {
+			font-size: 48px;
+			text-align: left;
+			margin: 80px 0px 0 0;
+			width: 300px;
+			display: block;
+			}
+
+#contact-info {
+			font-size: 200%;
+			margin-left: auto;
+			margin-right: auto;
+			width: 400px;
+			}
+
+#contact-info span {
+			
+			}
+
+.cform fieldset {
+			background: none;
+			border: none;
+			}
+
+.cf-fs1 {
+			background: none;
+			}
+#skud {
+
+			display: block;
+			clear: both;
+			color: #4b2802;
+			font: 12px "Times New Roman", Times, serif;
+			}
+
+.single_additional_description {
+						color: #4b2802;
+			font: 12px "Times New Roman", Times, serif;
+
+			}
+
+.cformslinklove {
+		position: absolute;
+		top: -500px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+			}
+
+.post, .entry {
+				/*background: rgba(255,105,105,0.52);*/
+	
+			}
+
+/*Structure: 
+#products
+.PeCategories.categorydisplay > 
+#productstab
+*/
+
+#productsc {
+			position: fixed;
+			top: 200px;
+			}
+
+#products {
+			position: relative;
+			margin: 0;
+			z-index: 5;
+			margin-left: -226px;
+			background: #3d2109;
+			width: 200px;
+			padding: 10px;
+			border: 6px solid #630;
+			border-left: none;
+			-moz-border-radius-bottomright: 10px;
+			-webkit-border-bottom-right-radius: 10px;
+			-khtml-border-bottom-right-radius: 10px;
+			-moz-border-radius-topright: 10px;
+			-webkit-border-top-right-radius: 10px;
+			-khtml-border-top-right-radius: 10px;
+			}
+
+#productstab {
+			background: #3d2109 url(images/products.png) no-repeat 10px;
+			position: absolute;
+			border: 6px solid #630;
+			width: 35px;
+			border-left: none;
+			-moz-border-radius-bottomright: 10px;
+			-webkit-border-bottom-right-radius: 10px;
+			-khtml-border-bottom-right-radius: 10px;
+			-moz-border-radius-topright: 10px;
+			-webkit-border-top-right-radius: 10px;
+			-khtml-border-top-right-radius: 10px;
+			top: 140px;
+			height: 100px;
+			left: 220px;
+			}
+
+#productstab:hover {
+			background: #3d2109 url(images/productsh.png) no-repeat 10px;
+			}
+
+#productstab span {
+			visibility: hidden;
+			position: -9999px;
+			}
+
+.rotate-cw {
+			-moz-transform:rotate(90deg);
+			-webkit-transform:rotate(90deg);
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+			}
+
+.PeCatsBrands {
+			}
+
+.PeCategories.categorydisplay {
+						
+			}
+
+ul.PeCategories li.cat-item span.category{
+
+			font: 20px "Monotype Corsiva", cursive;
+			padding: 30px 0;
+			}
+
+ul.PeCategories  li.cat-item ul.SubCategories li.cat-item a.categorylink:hover {
+			text-decoration: none;
+			color: #86d060;
+			}
+
+ul.PeCategories li.cat-item span.category a.productlink{
+			padding-bottom: 15px;
+			color: #6498cb;
+
+			}
+
+ul.PeCategories  li.cat-item ul.SubCategories li.cat-item a.categorylink{
+			color: #fff;
+			padding: 0 0 0 10px;
+			font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+			}
+			
+
+
+/* @group Home Page */
+
+#ancient_beads, #new_beads, #roman_glass, #tribal_adornments, #belly_dance, #kv_designs {
+			height: 220px;
+			margin-bottom:20px;
+			border: 6px solid #9a6633;
+			margin: 0 0px 7px 7px;
+			}
+			
+#ancient_beads a, #new_beads a, #roman_glass a, #tribal_adornments a, #belly_dance a, #kv_designs a {
+			display: block;
+			padding: 0px 0 0 0;
+			margin:0px 0px 0px 0;
+			height: 220px;
+			width: 300px;
+			}
+
+#ancient_beads a span, #new_beads a span, #roman_glass a span, #tribal_adornments a span, #belly_dance a span, #kv_designs a span {
+			display: inline-block;
+			color: white;
+			padding: 0px 0 5px 0;
+			margin:0px 0px 0px 0;
+			font-size: 30px;
+			width: 300px;
+			text-align: center;
+			background: rgba(0,0,0,0.7);
+			font-weight: bold;
+			top: 155px;
+			position: relative;
+			}
+			
+
+#ancient_beads {
+			background: url(/images/cat-ancient.jpg);
+			}
+#new_beads  {
+			background: url(/images/cat-new.jpg);
+			}
+#roman_glass  {
+			background: url(/images/cat-glass.jpg);
+			}
+ #tribal_adornments {
+			background: url(/images/cat-tribal.jpg);
+			}
+ #belly_dance {
+			background: url(/images/cat-bellydance.jpg);
+			}
+#kv_designs {
+			background: url(/images/cat-handmade.jpg);
+			
+			
+			}
+
+/* @end */
+
+/* @group Footer */
+
+#scrollbottom{
+			background:  url(images/scrollbottom.png) -80px;
+			height: 60px;
+			width: 100%;
+			}
+
+#footer {
+			position: relative;
+			color: white;
+			background: #336633 url(images/bgreen.jpg) fixed;
+			margin: 0;
+			padding: 0;
+			}
+#footerAddress {
+			background-color: #3d2109;
+			/*background: rgba(0,100,50,0.84);*/
+			/*position: absolute;*/
+			margin: 0 auto;
+			bottom: -1%;
+			padding: 10px 0 20px 20px;
+			width: 300px; 
+			border: 6px solid #630;
+			border-bottom: none;
+			-moz-border-radius-topleft: 10px;
+			-webkit-border-top-left-radius: 10px;
+			-khtml-border-top-left-radius: 10px;
+			-moz-border-radius-topright: 10px;
+			-webkit-border-top-right-radius: 10px;
+			-khtml-border-top-right-radius: 10px;
+
+			}
+
+/* @group vCard Address */
+
+.vcard div, a.email, span.type {
+			color:  #fff;
+			font: 20px "Times New Roman", Times, serif;	
+			}
+
+div.org {
+			color: #fff;
+			font:  30px "Monotype Corsiva", cursive;
+			margin: 0;
+			padding: 0 0 5px 0;	
+			}
+
+a.url fn n {
+			display: none;
+			}
+
+/* @end */
+
+/* @end */			
+			
+a#fancy_collapser_link{
+	color: #fff;
+}			
+
+a#fancy_collapser_link:hover{
+	color: #86d060;
+}		
+			
+#herotext {
+			color:  #336633;
+			font: 24px "Monotype Corsiva", cursive;
+			}
+
+
+.herotext {
+			font: 18px "Monotype Corsiva", cursive;
+			}
+
+#cartbutton {
+			font-size: 24px;
+
+			}
+
+/*My Edits above*/
+
+#page {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		}
+		
+/* This hides the 'skip to' links and maintains accessibility */
+		
+#skip, .screen-reader-text {
+		position: absolute;
+		top: -500px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		}
+
+.post, .entry {
+
+			}
+
+
+
+
+.postmetadata {
+		margin: 30px 0;
+		}
+
+.smallattachment {
+		float: left;
+		width: 128px;
+		margin: 5px 5px 5px 0px;
+		}
+
+.attachment {
+		margin: 5px 0px;
+		}
+
+.postmetadata {
+		clear: both;
+		}
+
+/* End Structure */
+
+/* Begin Images */
+
+/* @group Images */
+
+p img {
+		padding: 0;
+		max-width: 100%;
+		}
+
+img.centered {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+img.alignright {
+		padding: 4px;
+		margin: 0 0 2px 7px;
+		display: inline;
+		}
+
+img.alignleft {
+		padding: 4px;
+		margin: 0 7px 2px 0;
+		display: inline;
+		}
+
+.alignright {
+		float: right;
+		}
+
+.alignleft {
+		float: left
+		}
+
+/* End Images */
+
+
+
+/* @end */
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+/* @group Lists */
+
+html>body .entry ul {
+		margin-left: 0px;
+		padding: 0 0 0 30px;
+		list-style: none;
+		padding-left: 10px;
+		text-indent: -10px;
+		}
+
+html>body .entry li {
+		margin: 7px 0 8px 10px;
+		}
+
+.entry ul li:before, #sidebar ul ul li:before {
+		content: "\00BB \0020";
+		}
+
+.entry ol {
+		padding: 0 0 0 35px;
+		margin: 0;
+		}
+
+.entry ol li {
+		margin: 0;
+		padding: 0;
+		}
+
+.postmetadata ul, .postmetadata li {
+		display: inline;
+		list-style-type: none;
+		list-style-image: none;
+		}
+
+/* End Entry Lists */
+
+/* @end */
+
+/* Begin Form Elements */
+
+/* @group Forms */
+
+#searchform {
+
+		}
+
+#sidebar #searchform #s {
+		width: 108px;
+		padding: 2px;
+		}
+
+#sidebar #searchsubmit {
+		padding: 1px;
+		}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+		text-align:center;
+		}
+
+select {
+		width: 130px;
+		}
+
+#commentform input {
+		width: 170px;
+		padding: 2px;
+		margin: 5px 5px 1px 0;
+		}
+
+#commentform {
+		margin: 5px 10px 0 0;
+		}
+
+#commentform textarea {
+		width: 100%;
+		padding: 2px;
+		}
+
+#respond:after {
+		content: "."; 
+	    display: block; 
+	    height: 0; 
+	    clear: both; 
+	    visibility: hidden;
+		}
+
+#commentform #submit {
+		margin: 0 0 5px auto;
+		float: right;
+		}
+
+/* End Form Elements */
+
+/* @end */
+
+/* Begin Comments*/
+
+/* @group Comments */
+
+.alt {
+		margin: 0;
+		padding: 10px;
+		}
+
+.commentlist {
+		padding: 0;
+		text-align: justify;
+		}
+
+.commentlist li {
+		margin: 15px 0 10px;
+		padding: 5px 5px 10px 10px;
+		list-style: none;
+		}
+
+.commentlist li .avatar { 
+		float: right;
+		padding: 2px;
+		}
+
+.commentlist li ul li { 
+		margin-right: -5px;
+		margin-left: 10px;
+		}
+
+.commentlist p {
+		margin: 10px 5px 10px 0;
+		}
+
+.children {
+		padding: 0;
+		}
+
+#commentform p {
+		margin: 5px 0;
+		}
+
+.nocomments {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		}
+
+.commentmetadata {
+		margin: 0;
+		display: block;
+		}
+
+/* End Comments */
+
+/* @end */
+
+/* Begin Calendar */
+
+/* @group WP Calendar */
+
+#wp-calendar {
+		empty-cells: show;
+		margin: 10px auto 0;
+		width: 155px;
+		}
+
+#wp-calendar #next a {
+		padding-right: 10px;
+		text-align: right;
+		}
+
+#wp-calendar #prev a {
+		padding-left: 10px;
+		text-align: left;
+		}
+
+#wp-calendar a {
+		display: block;
+		}
+
+#wp-calendar caption {
+		text-align: center;
+		width: 100%;
+		}
+
+#wp-calendar td {
+		padding: 3px 0;
+		text-align: center;
+		}
+
+/* End Calendar */
+
+/* @end */
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+		cursor: help;
+		}
+
+blockquote {
+		margin: 15px 30px 0 10px;
+		padding-left: 20px;
+		}
+
+blockquote cite {
+		margin: 5px 0 0;
+		display: block;
+		}
+
+.center {
+		text-align: center;
+		}
+
+.hidden {
+		display: none;
+		}
+
+hr {
+		display: none;
+		}
+
+.navigationTop {
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		}
+
+.navigationBottom {
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		}
+
+/* End Various Tags & Classes*/
+
+/* Captions */
+
+/* @group Captions */
+
+.aligncenter,
+div.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+.wp-caption {
+		text-align: center;
+		padding-top: 4px;
+		margin: 10px;
+		}
+
+.wp-caption img {
+		margin: 0;
+		padding: 0;
+		}
+
+.wp-caption p.wp-caption-text {
+		padding: 0 4px 5px;
+		margin: 0;
+		}
+/* End captions */
+
+/* @end */

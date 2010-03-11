@@ -1,0 +1,93 @@
+/*
+
+THEME:		960bc
+AUTHOR:		Troy Dean 
+WEBSITE:   	http://www.guardianwebdesign.com.au
+CLIENT NAME:	
+CLIENT SITE:	
+VERSION:		1.0  
+
+*/ 
+
+/* Put your css for colours here */
+
+body {
+		/*background: #fff;*/
+		color: #000;
+		}
+
+#header {
+		/*background-color: #fff;*/
+		}
+
+
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+		color: #333;
+		}
+
+a, h2 a:hover, h3 a:hover {
+		color: blue;
+		}
+
+a:hover {
+		color: #147;
+		}
+
+a img {
+		border: none;
+		}
+
+.wp-caption {
+		border: 1px solid #ddd;
+		background-color: #f3f3f3;
+		-moz-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		}
+
+.wp-caption img {
+		border: 0 none;
+		}
+
+acronym, abbr {
+		border-bottom: 1px dashed #999;
+		}
+
+blockquote {
+		border-left: 5px solid #ddd;
+		}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+		color: #777;
+		}
+
+.entry p a:visited {
+		color: #b85b5a;
+		}
+
+.commentlist li .avatar { 
+		border: 1px solid #eee;
+		background: #fff;
+		}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+		background-color: #fff;
+		}
+
+.thread-alt {
+		background-color: #f8f8f8;
+		}
+
+.thread-even {
+		background-color: white;
+		}
+
+.depth-1 {
+		border: 1px solid #ddd;
+		}
+
+.even, .alt {
+		border-left: 1px solid #ddd;
+		}

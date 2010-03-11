@@ -1,0 +1,469 @@
+/* @override http://localhost:8888/wp-kochyan/wp-content/themes/960bc/style.css */
+
+/*
+Theme Name: 960bc
+Theme URI: http://www.guardianwebdesign.com.au/960bc
+Description: A blank canvas WordPress theme for developers based on the 960 CSS framework.
+Version: 1.6
+Author: Troy Dean
+Author URI: http://www.guardianwebdesign.com.au/
+Tags: fixed-width, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar
+
+	960bc v1.6
+	http://www.guardianwebdesign.com.au/960bc
+
+	This theme was designed and built by Troy Dean
+	as a starting point for WordPress developers who
+	like the 960 grid system.
+	http://www.960.gs
+	The theme includes no images and minimal styling,
+	providing a blank canvas for the designer to unleash
+	her css magic.
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+/* for ease of updating into the future we use separate style sheets for colours and typography */
+
+@import url(colours.css);
+@import url(typography.css);
+
+/* Begin Structure */
+
+#navigation ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			}
+
+#navigation li {
+			list-style-type: none;
+			font-size: 24px;
+			}
+
+#primary_nav li a {
+			float: left;
+			height: 145px;
+			display: block;
+			background-repeat:no-repeat;
+			text-indent: -99999px;
+			position: relative;
+			}
+
+#searchform {
+			float: right;
+			padding: 10px;
+			}
+
+.post, .entry {
+				background: rgba(255,105,105,0.52);
+	
+			}
+
+#ancient_beads, #new_beads, #roman_glass, #tribal_adornments, #belly_dance, #hot_buys {
+			height: 220px;
+			background: rgba(255,105,105,0.52);
+			margin-bottom:20px;
+			}
+#footer p {
+			color: white;
+			}
+
+#footer, #footerstuff{
+			background-color: rgba(0,100,50,0.84);
+
+			}
+
+#footerContent, #footerAddress {
+			background-color: rgba(0,100,50,0.84);
+			}
+
+#herotext {
+			color: white;
+			font-size: 24px;
+
+			}
+
+#headerimg {
+			background-color: rgba(0,100,50,0.84);
+
+			}
+
+#headerimg h2 {
+			font-size: 420%;
+			padding-bottom: 47px;
+			}
+
+p.description {
+			}
+
+#cartbutton {
+			font-size: 24px;
+			float: right;
+			padding: 0 10px 0 0;
+			}
+
+	.container_12
+	{
+		background: #fff url(images/12_col.gif) repeat-y;
+	}
+
+/*My Edits above*/
+body {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		background-image: url(images/bg.jpg);
+		}
+
+#page {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		}
+
+#header {
+		height: 155px;
+		width: 100%;
+		background-image: url(images/pattern.jpg);
+		}
+
+#headerimg {
+		padding-bottom: 5px;
+		}
+		
+/* This hides the 'skip to' links and maintains accessibility */
+		
+#skip, .screen-reader-text {
+		position: absolute;
+		top: -500px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		}
+
+#content {
+		margin-top: 40px;
+		background: rgba(255,105,105,0.52);
+		}
+
+#sidebar
+{
+		text-align: left;
+		padding-top: 40px;
+		padding-bottom: 25px;
+		}
+
+#footer {
+		margin: 40px 0 0 0;
+		padding: 60px 0;
+		background-image: url(./images/pattern.jpg);
+		}	
+
+.post {
+		margin: 0 0 40px;
+		}
+
+.postmetadata {
+		margin: 30px 0;
+		}
+
+.smallattachment {
+		float: left;
+		width: 128px;
+		margin: 5px 5px 5px 0px;
+		}
+
+.attachment {
+		margin: 5px 0px;
+		}
+
+.postmetadata {
+		clear: both;
+		}
+
+/* End Structure */
+
+/* Begin Images */
+p img {
+		padding: 0;
+		max-width: 100%;
+		}
+
+img.centered {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+img.alignright {
+		padding: 4px;
+		margin: 0 0 2px 7px;
+		display: inline;
+		}
+
+img.alignleft {
+		padding: 4px;
+		margin: 0 7px 2px 0;
+		display: inline;
+		}
+
+.alignright {
+		float: right;
+		}
+
+.alignleft {
+		float: left
+		}
+/* End Images */
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul {
+		margin-left: 0px;
+		padding: 0 0 0 30px;
+		list-style: none;
+		padding-left: 10px;
+		text-indent: -10px;
+		}
+
+html>body .entry li {
+		margin: 7px 0 8px 10px;
+		}
+
+.entry ul li:before, #sidebar ul ul li:before {
+		content: "\00BB \0020";
+		}
+
+.entry ol {
+		padding: 0 0 0 35px;
+		margin: 0;
+		}
+
+.entry ol li {
+		margin: 0;
+		padding: 0;
+		}
+
+.postmetadata ul, .postmetadata li {
+		display: inline;
+		list-style-type: none;
+		list-style-image: none;
+		}
+
+/* End Entry Lists */
+
+/* Begin Form Elements */
+#searchform {
+		margin: 10px auto;
+		padding: 5px 3px;
+		text-align: left;
+		}
+
+#sidebar #searchform #s {
+		width: 108px;
+		padding: 2px;
+		}
+
+#sidebar #searchsubmit {
+		padding: 1px;
+		}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+		text-align:center;
+		}
+
+select {
+		width: 130px;
+		}
+
+#commentform input {
+		width: 170px;
+		padding: 2px;
+		margin: 5px 5px 1px 0;
+		}
+
+#commentform {
+		margin: 5px 10px 0 0;
+		}
+
+#commentform textarea {
+		width: 100%;
+		padding: 2px;
+		}
+
+#respond:after {
+		content: "."; 
+	    display: block; 
+	    height: 0; 
+	    clear: both; 
+	    visibility: hidden;
+		}
+
+#commentform #submit {
+		margin: 0 0 5px auto;
+		float: right;
+		}
+
+/* End Form Elements */
+
+/* Begin Comments*/
+
+.alt {
+		margin: 0;
+		padding: 10px;
+		}
+
+.commentlist {
+		padding: 0;
+		text-align: justify;
+		}
+
+.commentlist li {
+		margin: 15px 0 10px;
+		padding: 5px 5px 10px 10px;
+		list-style: none;
+		}
+
+.commentlist li .avatar { 
+		float: right;
+		padding: 2px;
+		}
+
+.commentlist li ul li { 
+		margin-right: -5px;
+		margin-left: 10px;
+		}
+
+.commentlist p {
+		margin: 10px 5px 10px 0;
+		}
+
+.children {
+		padding: 0;
+		}
+
+#commentform p {
+		margin: 5px 0;
+		}
+
+.nocomments {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		}
+
+.commentmetadata {
+		margin: 0;
+		display: block;
+		}
+
+/* End Comments */
+
+/* Begin Calendar */
+#wp-calendar {
+		empty-cells: show;
+		margin: 10px auto 0;
+		width: 155px;
+		}
+
+#wp-calendar #next a {
+		padding-right: 10px;
+		text-align: right;
+		}
+
+#wp-calendar #prev a {
+		padding-left: 10px;
+		text-align: left;
+		}
+
+#wp-calendar a {
+		display: block;
+		}
+
+#wp-calendar caption {
+		text-align: center;
+		width: 100%;
+		}
+
+#wp-calendar td {
+		padding: 3px 0;
+		text-align: center;
+		}
+
+/* End Calendar */
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+		cursor: help;
+		}
+
+blockquote {
+		margin: 15px 30px 0 10px;
+		padding-left: 20px;
+		}
+
+blockquote cite {
+		margin: 5px 0 0;
+		display: block;
+		}
+
+.center {
+		text-align: center;
+		}
+
+.hidden {
+		display: none;
+		}
+
+hr {
+		display: none;
+		}
+
+.navigationTop {
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		}
+
+.navigationBottom {
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		}
+
+/* End Various Tags & Classes*/
+
+/* Captions */
+.aligncenter,
+div.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+.wp-caption {
+		text-align: center;
+		padding-top: 4px;
+		margin: 10px;
+		}
+
+.wp-caption img {
+		margin: 0;
+		padding: 0;
+		}
+
+.wp-caption p.wp-caption-text {
+		padding: 0 4px 5px;
+		margin: 0;
+		}
+/* End captions */
